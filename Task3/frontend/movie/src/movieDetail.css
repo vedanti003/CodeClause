@@ -1,0 +1,38 @@
+.movie-detail {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.movie-detail img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.movie-detail h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.movie-detail p {
+  margin-bottom: 5px;
+}
+
+.movie-detail ul {
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.movie-detail li {
+  list-style-type: none;
+}
+
+.movie-detail strong {
+  font-weight: bold;
+}

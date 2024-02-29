@@ -1,0 +1,58 @@
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.movie {
+  cursor: pointer;
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.movie h3,
+.movie p {
+  margin: 0;
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-panel {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .right-panel {
+    width: 100%;
+    max-width: none;
+  }
+
+  .movie {
+    width: 100%;
+  }
+
+  .movie.selected .movie-detail {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+}
