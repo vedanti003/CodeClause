@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitnessApp</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&display=swap" rel="stylesheet" />
+  <script src="index.js"></script>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+        <div id="logo">
+            <span>Fit</span><span id="inn">Flex</span>
+        </div>
+        <div id="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul id="list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#feature">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+  <section id="hero">
+    <h1>
+      SAY HELLO TO<br />
+      THE #1 FITNESS &<br />
+      WELLNESS PLATFORM
+    </h1>
+    <p>
+      Unlimited access to the world’s best workouts, <br />meditation, nutrition and more.
+    </p>
+    <button>
+      SIGN UP FOR FREE
+    </button>
+  </section>
+
+  <section id="feature">
+    <h1>Take your fitness to the next level</h1>
+
+    <div id="cards">
+      <div class="card">
+        <img class="subcard" src="images/card1.jpg" />
+        <h3 class="feat-head">FITNESS</h3>
+        <p class="feat-cont">Be more active and reach your goals with custom fitness programs.</p>
+      </div>
+      <div class="card">
+        <img class="subcard" src="images/card2.jpg" />
+        <h3 class="feat-head">MINDFULNESS</h3>
+        <p class="feat-cont">Reduce stress and be more mindful with meditation and yoga classes.</p>
+      </div>
+      <div class="card">
+        <img class="subcard" src="images/card3.jpg" />
+        <h3 class="feat-head">NUTRITION</h3>
+        <p class="feat-cont">Eat healthier with personalized meal plans and 500+ exclusive recipes.</p>
+      </div>
+      <div class="card">
+        <img class="subcard" src="images/card4.jpg" />
+        <h3 class="feat-head">MOTIVATION</h3>
+        <p class="feat-cont">Make working out more fun and rewarding with challenges and the support of your friends.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h1>What they say about us?</h1>
+    <div id="test-cards">
+      <div class="test-card">
+        <h4>John Doe</h4>
+        <p>"FitFlex has changed my life! I've never felt better both physically and mentally. Highly recommend!"</p>
+      </div>
+      <div class="test-card">
+        <h4>Jane Smith</h4>
+        <p>"I love how easy it is to access top-notch workouts and nutrition tips. FitFlex is a game-changer!"</p>
+      </div>
+      <div class="test-card">
+        <h4>Michael Johnson</h4>
+        <p>"The mindfulness and meditation classes have helped me manage stress and improve my focus. Thank you, FitFlex!"</p>
+      </div>
+      <div class="test-card">
+        <h4>Sarah Thompson</h4>
+        <p>"Nutrition has always been a challenge for me, but with FitFlex's meal plans, I'm eating healthier than ever before!"</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  
+  
+
+  <footer>
+    <p>Made with ❤️ by Vedanti</p>
+  </footer>
+
+</body>
+</html>

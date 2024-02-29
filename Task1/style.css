@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    width: 100vw; 
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.855);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
+    width: 100%;
+    z-index: 1000;
+}
+#menu-toggle {
+    display: none; 
+}
+
+#logo {
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    cursor: pointer;
+    margin: -10px;
+    word-spacing: 10px;
+}
+
+#logo span {
+    font-weight: 500;
+}
+
+#list {
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+    width: 50%;
+    justify-content: space-around;
+    font-size: 17px;
+}
+
+#list li {
+    cursor: pointer; 
+    list-style: none; 
+}
+
+#list li a {
+    color: white; 
+    text-decoration: none; 
+}
+
+#list li a:hover {
+    text-decoration: none;
+}
+
+
+#hero {
+    position: relative;
+    color: #fff;
+    background-image: url('images/last.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: -10px -23px 20px -20px rgba(0, 0, 0, 0.45);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px; 
+}
+
+
+#hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    padding: 5px;
+    text-align: center;
+}
+
+#hero button {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#hero button:hover {
+    background-color: rgba(255, 255, 255, 0.841);
+}
+
+#feature {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#feature h1 {
+    font-size: 2.5rem;
+    margin: 10px 0 5px 0;
+}
+
+#cards {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.card {
+    flex: 1 1 300px;
+    margin: 0 5px;
+    box-sizing: border-box;
+}
+
+.subcard {
+    flex: 1 1 300px;
+    margin: 25px 0 5px 0;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.feat-head {
+    font-size: 1.5rem;
+    margin: 20px 0 5px 0;
+}
+
+.feat-cont {
+    margin: 5px;
+    font-size: 1rem;
+}
+
+#testimonials {
+    background-image: url(images/test-back-1.jpg);
+    height: 400px;
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#testimonials h1 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#test-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.test-card {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    opacity: 0.7;
+    box-sizing: border-box;
+    padding: 20px;
+    width: calc(25% - 40px);
+    max-width: 300px;
+    text-align: center;
+}
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contact-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-container label {
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .contact-container input,
+  .contact-container textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .contact-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .contact-container button:hover {
+    background-color: #0056b3;
+  }
+
+  
+footer {
+    background-color: rgba(0, 0, 0, 0.855);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+
+@media screen and (max-width: 768px) {
+    #list {
+        display: none; 
+    }
+    
+    #logo {
+        margin: 0;
+    }
+    #menu-toggle {
+        display: block; 
+        cursor: pointer;
+    }
+
+    #list {
+        display: none; 
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.855);
+        padding: 20px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    #list.show {
+        display: block; 
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px auto;
+        transition: 0.4s;
+    }
+
+    #menu-toggle.open .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    #menu-toggle.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle.open .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    #hero h1 {
+        font-size: 3rem; 
+    }
+    
+    #hero p {
+        font-size: 1rem; 
+    }
+    
+    #hero button {
+        width: 150px; 
+        height: 40px; 
+        font-size: 0.8rem; 
+    }
+    
+    #cards {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .card {
+        max-width: 100%; 
+        margin: 10px 0; 
+    }
+    
+    .test-card {
+        width: calc(100% - 40px); 
+        max-width: 100%; 
+    }
+    
+    #testimonials {
+        height: auto; 
+    }
+}
